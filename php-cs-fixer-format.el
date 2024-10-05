@@ -25,6 +25,9 @@
   :group 'php-cs-fixer-format
   :type '(repeat string))
 
+;;;###autoload (autoload 'php-cs-fixer-format-buffer "php-cs-fixer-format" nil t)
+;;;###autoload (autoload 'php-cs-fixer-format-region "php-cs-fixer-format" nil t)
+;;;###autoload (autoload 'php-cs-fixer-format-on-save-mode "php-cs-fixer-format" nil t)
 (reformatter-define php-cs-fixer-format
   :stdin nil
   :stdout nil
