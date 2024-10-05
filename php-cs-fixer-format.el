@@ -20,7 +20,7 @@
   :group 'php-cs-fixer-format
   :type 'string)
 
-(defcustom php-cs-fixer-format-arguments '("fix")
+(defcustom php-cs-fixer-format-arguments nil
   "Arguments to pass to php-cs-fixer."
   :group 'php-cs-fixer-format
   :type '(repeat string))
@@ -29,7 +29,7 @@
   :stdin nil
   :stdout nil
   :program php-cs-fixer-format-command
-  :args (append php-cs-fixer-format-arguments (list input-file))
+  :args (append '("fix") php-cs-fixer-format-arguments (list input-file))
   :lighter " php-cs-fixer"
   :group 'php-cs-fixer-format)
 
